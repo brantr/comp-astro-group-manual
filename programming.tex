@@ -1,0 +1,68 @@
+\section{Programming Resources}
+\label{sec:programming}
+
+The CARG deploys a wide range of computer programming, including research code, website construction, and plotting and visualization. Here we provide access to some resources for programming and outline languages, tools, and libraries that we use regularly.
+
+\subsection{Software Repositories}
+\label{sec:github}
+
+Before you get started writing code, it's essential to start by creating a software repository for yourself. We use
+\href{https://github.com}{GitHub}, although there are other alternatives. Get used to the idea of \href{https://help.github.com/en/github/getting-started-with-github/create-a-repo}{creating repositories}, documenting them using the \href{https://help.github.com/en/github/creating-cloning-and-archiving-repositories/about-readmes}{README.md} file, \href{https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-branches}{branching your code}, updating the main branch by \href{https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests}{pull requests}. Create \href{https://guides.github.com/features/issues/}{issues} to document bugs or feature requests.
+
+\subsection{Text Editors}
+\label{sec:editors}
+
+You should pick a text editor with which to become proficient. Emacs or vi are standard (Brant unfortunately learned vi in 1999 and was stuck with it), but among the best editors now available is \href{https://www.sublimetext.com/}{Sublime Text}. Full use does require a license, so ask about purchasing one via reimbursement.
+
+\subsection{Computer Languages}
+\label{sec:languages}
+
+We spend a lot of time programming, and it's important to develop both skill with programming languages and a support structure for getting help as needed.  Always reach out on the Slack channel or via email.
+
+\subsubsection{Compilation}
+\label{sec:compilation}
+
+We use \href{https://www.gnu.org/software/make/}{GNU make} to link and compile our code.  A good example makefile is the \href{https://raw.githubusercontent.com/cholla-hydro/cholla/master/Makefile}{Cholla makefile}.  You can use this as a template.
+
+\subsubsection{C/C++}
+\label{sec:c}
+
+The core of our high-performance computational work is performed in C/C++. Good resources include
+
+\begin{itemize}
+	\item The standard C textbook by Kernighan \& Ritchie \cite{kernighan1988a}.
+\end{itemize} 
+
+\noindent
+The main C/C++ software libraries we use are
+\begin{itemize}
+	\item \href{https://developer.nvidia.com/cuda-zone}{NVIDIA CUDA}
+	\item \href{https://www.open-mpi.org}{Message Passing Interface (MPI)}
+	\item \href{https://www.gnu.org/software/gsl/}{GNU Science Library}
+	\item \href{http://www.fftw.org/}{Fast Fourier Transform in the West (FFTW)}
+\end{itemize}
+
+\subsubsection{Python}
+\label{sec:python}
+
+The main Python modules that we use are
+\begin{itemize}
+	\item \href{https://numpy.org}{\tt numpy}
+	\item \href{https://www.scipy.org}{\tt scipy}
+	\item \href{https://matplotlib.org}{\tt matplotlib}
+	\item \href{https://www.astropy.org}{\tt astropy}
+\end{itemize}
+
+\noindent
+To install Python modules, use the \href{https://pypi.org/project/pip/}{\tt pip} tool. Have a look at the \href{https://pip.pypa.io/en/stable/installing/}{{\tt pip} installation notes}.
+
+\subsubsection{Jupyter}
+\label{sec:jupyter}
+
+Almost all of our analysis will be done in \href{https://jupyter.org/}{Jupyter} notebooks. These will most frequently (always?) be in the form of Python 3 notebooks. Jupyter can be {\tt pip} installed.
+
+\subsubsection{Cholla}
+\label{sec:cholla}
+
+One of our essential simulation codes is \href{https://github.com/cholla-hydro/cholla}{{\tt Cholla}} by Evan Schneider, which is available on \href{https://github.com}{GitHub}.
+
